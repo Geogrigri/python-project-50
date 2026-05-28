@@ -38,7 +38,7 @@ def test_generate_diff_stylish(file1, file2, expected):
     file_path2 = get_fixture_path(file2)
     expected_result = read_fixture(expected)
 
-    assert generate_diff(file_path1, file_path2) == expected_result
+    assert generate_diff(file_path1, file_path2) == expected_result.strip()
 
 
 @pytest.mark.parametrize(

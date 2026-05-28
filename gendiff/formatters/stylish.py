@@ -71,4 +71,4 @@ def format_stylish(diff):
     lines = ["{"]
     lines.extend(iter_lines(diff, 1))
     lines.append("}")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines)
